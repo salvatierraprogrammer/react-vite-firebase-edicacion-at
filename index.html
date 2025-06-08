@@ -4,25 +4,44 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Etiquetas Open Graph (Facebook, WhatsApp, LinkedIn, etc.) -->
+    
+    <!-- Etiquetas Open Graph -->
     <meta property="og:title" content="Educación AT" />
     <meta property="og:description" content="Formación para acompañantes terapéuticos: cursos, talleres y especializaciones." />
-    <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/29/06/15/adult-1867483_960_720.jpg" />
-    <meta property="og:url" content="https://educacion-at.netlify.app/" />
     <meta property="og:type" content="website" />
-
-    <!-- Etiquetas Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Educación AT" />
-    <meta name="twitter:description" content="Formación para acompañantes terapéuticos: cursos, talleres y especializaciones." />
-    <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2016/11/29/06/15/adult-1867483_960_720.jpg" />
-
+    <meta property="og:url" content="https://educacion-at.netlify.app/" />
+    <meta property="og:image" content="https://educacion-at.netlify.app/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    
+    <!-- Título visible en navegador -->
     <title>Educación AT</title>
+
+    <!-- Estilos opcionales -->
+    <style>
+      .intro-container {
+        text-align: center;
+        padding: 2rem;
+        font-family: Arial, sans-serif;
+      }
+      .intro-container img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+      .intro-container p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #333;
+      }
+    </style>
   </head>
+
   <body>
     <div id="root"></div>
-
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
