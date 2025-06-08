@@ -1,0 +1,1 @@
+export const base_url = 'https://formacionat-7c434-default-rtdb.firebaseio.com/';
