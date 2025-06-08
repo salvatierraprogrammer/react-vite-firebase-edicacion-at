@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import DetallesPages from './pages/DetallesPages';
-import Header from './component/layout/header';
-import Footer from './component/layout/footer';
+import Header from './component/layout/Header';
+import Footer from './component/layout/Footer';
 import { Box, CssBaseline } from '@mui/material';
 import Panel from './pages/Panel';
 
