@@ -39,17 +39,20 @@ const CategoryNav = () => {
       alignItems="stretch"
     >
       {categorias.map((categoria) => (
-        <Grid
-          item
-          key={categoria}
-          xs={12}   // 1 por fila en pantallas muy chicas
-          sm={6}   // 2 por fila en pantallas pequeñas y medianas
-          lg={3}   // 4 por fila en pantallas grandes
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-          }}
-        >
+   <Grid
+  item
+  key={categoria}
+  xs={12}  // 1 tarjeta por fila en móviles
+  sm={6}   // 2 por fila en tablets pequeñas
+  md={6}   // 2 por fila en pantallas medianas
+  lg={6}   // 2 por fila en pantallas grandes
+  xl={6}   // 2 por fila en pantallas extra grandes
+  sx={{
+    display: 'flex',
+    justifyContent: 'center',
+  }}
+>
+
           <Paper
             elevation={4}
             role="button"

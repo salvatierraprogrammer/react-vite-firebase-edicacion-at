@@ -19,7 +19,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-
+import logo from '../../assets/logo.png'; // Asegúrate de que esta ruta sea correcta
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
@@ -28,7 +28,6 @@ const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navigate = useNavigate();
 
-  // Mapeo de íconos
   const iconMap = {
     Técnicatura: <SchoolIcon fontSize="large" />,
     Taller: <MenuBookIcon fontSize="large" />,
@@ -36,7 +35,6 @@ const Header = () => {
     Especialización: <WorkspacePremiumIcon fontSize="large" />,
   };
 
-  // Array de categorías con label, icono y path
   const categorias = [
     { label: 'Técnicatura', icon: iconMap['Técnicatura'], path: 'Técnicatura' },
     { label: 'Taller', icon: iconMap['Taller'], path: 'Taller' },
@@ -74,6 +72,20 @@ const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar>
+        {/* Logo */}
+        <Box
+          component="img"
+          src={logo}
+          alt="Logo"
+          sx={{
+            height: 40,
+            mr: 2,
+            cursor: 'pointer',
+          }}
+          onClick={() => navigate('/')}
+        />
+
+        {/* Título */}
         <Typography
           variant="h6"
           component="div"

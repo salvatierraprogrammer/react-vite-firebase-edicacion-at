@@ -47,9 +47,9 @@ const Home = () => {
         <Typography variant="h6" sx={{ mb: 4 }}>
           Explora tecnicaturas, cursos, talleres y especializaciones en todo Buenos Aires
         </Typography>
-        <Button variant="contained" color="secondary" onClick={irAlPanel}>
+       {/*  <Button variant="contained" color="secondary" onClick={irAlPanel}>
           Ir al Panel de Administración
-        </Button>
+        </Button> */}
       </Paper>
 
       {/* Navegación de Categorías */}

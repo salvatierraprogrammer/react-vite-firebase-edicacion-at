@@ -6,7 +6,7 @@ import Header from './component/layout/Header';
 import Footer from './component/layout/Footer';
 import { Box, CssBaseline } from '@mui/material';
 import Panel from './pages/Panel';
-
+import ScrollToTopButton from './component/common/ScrollToTopButton';
 const App = () => (
   <Router>
     <CssBaseline />
@@ -22,9 +22,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categoria/:categoria" element={<DetallesPages />} />
-           <Route path="/panel" element={<Panel />} />
+          <Route path="/panel" element={<Panel />} />
         </Routes>
       </Box>
+      <ScrollToTopButton />
       <Footer />
     </Box>
   </Router>
